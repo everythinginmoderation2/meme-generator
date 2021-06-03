@@ -9,11 +9,6 @@ const BACKEND_API = process.env.REACT_APP_BACKEND_API;
 
 const MemeUploader = () => {
   const [file, setFile] = useState(null);
-  //   "size":32,
-  //   "color":"WHITE",
-  // "alignmentX":"HORIZONTAL_ALIGN_CENTER",
-  // "alignmentY":"VERTICAL_ALIGN_TOP",
-  //   "topText":"This is up top"
   const [topTextColor, setTopTextColor] = useState("WHITE");
   const [bottomTextColor, setBottomTextColor] = useState("WHITE");
   const [topTextSize, setTopTextSize] = useState('16');
