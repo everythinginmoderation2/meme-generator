@@ -9,7 +9,7 @@ const MemeList = ({memes}) => {
       <CardGroup className="m-3 p-3">
         {memes.map((meme) => (
           <Card className='m-3' key={meme.id}>
-            <Card.Img src={`http://localhost:5000/${meme.outputMemePath.split('/').slice(1).join('/')}`} alt={meme.outputMemePath.split('/').slice(1).join('/')}/>
+            <Card.Img src={`${BACKEND_API}/${meme.outputMemePath.split('/').slice(1).join('/')}`} alt={meme.outputMemePath.split('/').slice(1).join('/')}/>
           </Card>
         ))}
       </CardGroup>

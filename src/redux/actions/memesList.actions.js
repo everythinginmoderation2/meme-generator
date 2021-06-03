@@ -9,7 +9,7 @@ const memesListActions = {
   getMemes: (pageNum, limit, query) => async (dispatch) => {
     dispatch({ type: types.GET_MEMES_LIST_REQUEST });
     try {
-      let url = `http://localhost:5000/memes?_page=${pageNum}&_limit=${limit}`;
+      let url = `${BACKEND_API}/memes?_page=${pageNum}&_limit=${limit}`;
       if (query) url += `&q=${query}`;
       const response = await api.get(url);
       console.log(`This is ${JSON.stringify(response.data)}`)
